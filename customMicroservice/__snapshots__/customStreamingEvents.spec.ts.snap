@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server publish rejects invalid message 1`] = `
+Array [
+  ValidationError {
+    "children": Array [],
+    "constraints": Object {
+      "isInt": "id must be an integer number",
+      "min": "id must not be less than 1",
+    },
+    "property": "id",
+    "target": SaleInvoiceDto {
+      "customerName": "me",
+      "id": "this is invalid Id!",
+    },
+    "value": "this is invalid Id!",
+  },
+]
+`;
